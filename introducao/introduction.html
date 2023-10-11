@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução JavaScript</title>
+</head>
+<body>
+    <h1>Salve JavaScript</h1>
+    <p>Esse paragrafo foi inserido via HTML.</p>
+    <span class="rosa">Nome do usuario</span>
+
+    <h3>Informações</h3>
+    <span class="nome"></span>
+    <span class="data"></span>
+    <span class="signo"></span>
+    <li class="contato"></li>
+
+
+    <script>
+        /* Função nativa de subir alertas */
+        alert('Cuidado Conteúdo Improprio !!!!');
+        alert('Não estou Brincando....');
+
+
+        /* Função nativa de coletar dados  */
+        prompt("digite seu nome:");
+        prompt("digite sua Data de Nascimento:");
+        prompt('digite seu signo');
+        prompt('digite seu contato');
+
+        /* Função nativa de confirmação */
+        confirm('Ok');
+        confirm('Tem Certeza Que Deseja Continuar?');
+        confirm('Ok Então.');
+
+        /* Declarando uma variavel (caixinha) */
+        var nome;
+        /* Associando uma função a uma variavel */
+        nome = prompt('Novamente digite seu nome:');
+        nome = prompt('Novamente digite sua Data de Nascimento:');
+        nome = prompt('Novamente digite seu signo:');
+        nome = prompt('Novamente digite seu contato:');
+        
+        var boxRosa = document.querySelector('.rosa');
+        boxRosa.innerHTML ='Seja Bem Vindo' + nome;
+
+        var boxnome = document.querySelector('.nome');
+        boxnome.innerHTML ='Belo Nome' + nome;
+
+        var boxlista = document.querySelector('.data');
+        boxlista.innerHTML ='Parabens' + nome;
+
+        var boxlisa = document.querySelector('.signo');
+        boxlista.innerHTML ='Vixe' + nome;
+
+        var boxcontato = document.querySelector('.contato');
+        boxcontato.innerHTML ='Otimo' + nome;
+    </script>
+</body>
+</html>
