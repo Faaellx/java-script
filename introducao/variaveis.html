@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+    <style>
+        body{
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby{
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <script>
+        /* Declarando Variaveis */
+        var AcessoGlobal; //E o tipo que pode ser acessada em todo programa
+        let AcessoLocal; //Pode ser acessada apenas no escopo em que nasceu
+        //Variavel do tipo const precisa ser inicializada
+        const naoMuda = 'Esse valor e imutável'; //Não pode sr alterada
+        
+        let nome, idade, altura;
+        let num1 = 3, num2 = 6, num3 = 9;
+        var txt1 = 'Que', txt2 = 'Calor', txt3 = 'Danado';
+        const cachorro = 'AuAu';
+
+
+        nome = prompt('Diga seu nome:');
+        idade = prompt('Diga sua idade:');
+
+        window.document.write('<h3> Salveee,' + nome + '!</h3>');
+        //Modo Abreviado
+        document.write(nome + ', você tem:' + idade + ' anos.' + '<br>');
+        document.write('<br>');
+        document.write('Clique na imagem para saber quantos filhos <br> você vai ter: <br>');
+        document.write('<img class="baby" src="gojobebe.webp"/>')
+
+        //Armazenamento a imagem no lado JS
+        let imgClique = document.querySelector('.baby');
+        imgClique.addEventListener('click', function(){
+            let qntdFilhos = Math.floor(Math.random() * 10);
+            document.write(nome + ', você apesar de já ter ' + idade + 'anos,');
+            document.write('<br> seu karma é ter ' + qntdFilhos + ' de filhos correndo atrás de você!');
+            document.write('<br> HAHAHAHAHA.');
+        });
+
+        
+    </script>
+</body>
+</html>

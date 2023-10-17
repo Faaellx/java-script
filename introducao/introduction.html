@@ -14,15 +14,11 @@
     <span class="nome"></span>
     <span class="data"></span>
     <span class="signo"></span>
-    <li class="contato"></li>
+    <li><span class="contato"></span></li>
 
 
     <script>
         /* Função nativa de subir alertas */
-        alert('Cuidado Conteúdo Improprio !!!!');
-        alert('Não estou Brincando....');
-
-
         /* Função nativa de coletar dados  */
         prompt("digite seu nome:");
         prompt("digite sua Data de Nascimento:");
@@ -30,32 +26,27 @@
         prompt('digite seu contato');
 
         /* Função nativa de confirmação */
-        confirm('Ok');
         confirm('Tem Certeza Que Deseja Continuar?');
-        confirm('Ok Então.');
 
         /* Declarando uma variavel (caixinha) */
         var nome;
+        var data;
+        var signo;
+        var contato;
         /* Associando uma função a uma variavel */
         nome = prompt('Novamente digite seu nome:');
-        nome = prompt('Novamente digite sua Data de Nascimento:');
-        nome = prompt('Novamente digite seu signo:');
-        nome = prompt('Novamente digite seu contato:');
+        data = prompt('Novamente digite sua Data de Nascimento:');
+        signo = prompt('Novamente digite seu signo:');
+        contato = prompt('Novamente digite seu contato:');
         
         var boxRosa = document.querySelector('.rosa');
         boxRosa.innerHTML ='Seja Bem Vindo' + nome;
 
         var boxnome = document.querySelector('.nome');
-        boxnome.innerHTML ='Belo Nome' + nome;
+        boxnome.innerHTML ='Nome:' + nome;
 
-        var boxlista = document.querySelector('.data');
-        boxlista.innerHTML ='Parabens' + nome;
-
-        var boxlisa = document.querySelector('.signo');
-        boxlista.innerHTML ='Vixe' + nome;
-
-        var boxcontato = document.querySelector('.contato');
-        boxcontato.innerHTML ='Otimo' + nome;
+        var boxdata = document.querySelector('.data');
+        boxdata.innerHTML ='Data de Nascimento:' + nome;
     </script>
 </body>
 </html>
