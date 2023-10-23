@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amo ser pobre rs</title>
+</head>
+<body>
+    <script>
+        //declaracao das variaveis
+        let cliente, produto, valor, parcelas, valortotal;
+        const juros = 0.1;
+
+        //recebendo valores do usuario
+        cliente = prompt('Informe seu Nome ?');
+        produto = prompt('Qual Produto Comprou ?');
+        valor = +prompt('Qual Valor Do Produto ?');
+        parcelas = +prompt('Quantas Parcelas ?');
+        //apresentando os dados no display
+
+        document.write(`Olá ${cliente}, você comprou um ${produto} <br>`);
+        document.write(`que custou ${valor}, em ${parcelas} vezes parcelado. <br>`);
+        document.write(`Total com juros de 10% de 1200 <br>`);
+        document.write(`Cada Parcela sai R$${valor/10}`);
+        document.write('R$');
+
+    </script>
+</body>
+</html>
