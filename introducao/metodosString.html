@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos String</title>
+</head>
+<body>
+    <script>
+        // Declaração das variaveis
+        let salve, texto1, rimaNycolas, happy;
+
+        // Iniciar as variaveis
+        salve = 'Olá vamos começar a aprender Java Script';
+        texto1 = 'Osh hahãm isso não peraeee! Meteu o loko';
+        rimaNycolas = 'Ih eu sei hahãn sei não o que rima com C';
+        happy = 'comida o pensamento vai em voçê é tentativas em vão tirar voçê do coração';
+
+        // Apresentar conteudo no documento
+        // Modelo Antigo
+        document.write(salve + ' ' + texto1);
+
+        // Versão mais atual, Template string
+        document.write('<br><br>');
+
+        //Possibilidade de interpolação
+        document.write(`${salve} com o IOS`);
+        document.write('Olhe no console');
+
+        // Metodos de string
+        console.log(salve.length); //length retorna o tamanho da variavel
+        console.log(texto1.substring(28));
+        console.log(texto1.substring(28, 33));
+        console.log(rimaNycolas.split(' ')); //separa a frase em palavras
+        let novotexto = rimaNycolas.split(' '); // retorna um array com as palavras
+        console.log(novotexto[2]); // ultiliza de um caracter como divisor
+        console.log(happy.split('e'));
+        console.log(rimaNycolas.replace('sei', 'Não sei'));
+        happy = '    oi..   ';
+        console.log(happy);
+        console.log(happy.trim());
+
+
+    </script>
+</body>
+</html>

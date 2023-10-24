@@ -20,9 +20,10 @@
 
         document.write(`Olá ${cliente}, você comprou um ${produto} <br>`);
         document.write(`que custou ${valor}, em ${parcelas} vezes parcelado. <br>`);
-        document.write(`Total com juros de 10% de 1200 <br>`);
-        document.write(`Cada Parcela sai R$${valor/10}`);
-        document.write('R$');
+        document.write(`Total com juros de 10% sobre o valor ${valor} <br>`);
+        valortotal = valor + (valor*juros);
+        document.write(`Cada Parcela sai R$${valor/10} <br>`);
+        document.write('R$' + valortotal);
 
     </script>
 </body>
