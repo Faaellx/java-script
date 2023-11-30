@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Numero</title>
+</head>
+<body>
+    
+
+    <script>
+        var num = prompt('Digite um nummero:');
+      
+
+       while (num == ''){
+        num = prompt('Digite um numero valido :');
+       }
+
+        const numInteiro = parseInt(num);
+
+        if (numInteiro == 0){
+            alert(`O numero digitado ${numInteiro} é neutro`)
+        }
+
+        else if (num > 0){
+            alert(`O numero digitado ${numInteiro} é positivo!`)
+        }
+        else{
+            alert(`O numero digitado ${numInteiro} é negativo!`)
+        }
+    </script>
+
+
+</body>
+</html>
